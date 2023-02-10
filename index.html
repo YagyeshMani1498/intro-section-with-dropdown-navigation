@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav-style.css" />
+  </head>
+  <body>
+    <!-- main-container -->
+    <main class="main-container">
+      <header class="header">
+        <img
+          src="images/logo.svg"
+          alt="snap-logo"
+          class="snape-logo"
+          width="150px"
+        />
+
+        <!-- menu-button -->
+        <button class="open-button toggle">
+          <img src="images/icon-menu.svg" alt="menu-icon" />
+        </button>
+
+        <!-- navigation-bar -->
+        <div class="nav-bar close-nav">
+          <button class="close-button">
+            <img src="images/icon-close-menu.svg" alt="menu-icon" />
+          </button>
+          <ul class="nav-list">
+            <li>
+              <a href="#" class="nav-link feature">
+                Feature<img
+                  src="images/chevron-down.svg"
+                  alt=""
+                  class="down up-down"
+                />
+                <img
+                  src="images/chevron-up.svg"
+                  alt=""
+                  class="up up-down hide"
+                />
+                <ul class="feature-list shrink">
+                  <li>
+                    <a href="#" class="feature-link"
+                      ><img src="images/icon-todo.svg" alt="" />Todo List</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="feature-link"
+                      ><img src="images/icon-calendar.svg" alt="" />Calendar</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="feature-link"
+                      ><img
+                        src="images/icon-reminders.svg"
+                        alt=""
+                      />Reminders</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="feature-link"
+                      ><img src="images/icon-planning.svg" alt="" />Planning</a
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link company">
+                Company<img
+                  src="images/chevron-down.svg"
+                  alt=""
+                  class="down up-down"
+                />
+                <img
+                  src="images/chevron-up.svg"
+                  alt=""
+                  class="up up-down hide"
+                />
+              </a>
+              <ul class="company-list shrink">
+                <li><a href="#" class="company-link">History</a></li>
+                <li><a href="#" class="company-link">Our Team</a></li>
+                <li><a href="#" class="company-link">Blog</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-link"> Careers </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">About</a>
+            </li>
+          </ul>
+
+          <div class="register-login">
+            <p><a href="#" class="nav-link">Login</a></p>
+            <a href="#"
+              ><button class="learn-more register">Register</button></a
+            >
+          </div>
+        </div>
+      </header>
+      <!-- hero section -->
+      <section class="hero-section">
+        <div class="hero-img-box">
+          <picture>
+            <source
+              media="(min-width: 56.25rem)"
+              srcset="images/image-hero-desktop.png"
+            />
+            <img
+              src="images/image-hero-mobile.png"
+              alt="hero-image"
+              class="hero-img"
+            />
+          </picture>
+        </div>
+        <div class="hero-text">
+          <h1 class="heading">
+            Make <br class="line-break" />
+            remote work
+          </h1>
+          <p class="heading-info">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a href="#"><button class="learn-more">Learn more</button></a>
+          <ul class="logo-list">
+            <li>
+              <a href="#"><img src="images/client-databiz.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/client-audiophile.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/client-meet.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/client-maker.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="main.js"></script>
+  </body>
+</html>
