@@ -3,9 +3,11 @@ let openButton = document.querySelector(".open-button");
 let closeButton = document.querySelector(".close-button");
 openButton.addEventListener("click", () => {
   document.querySelector(".nav-bar").classList.remove("close-nav");
+  document.querySelector(".shadow").classList.remove("shadow-hide");
 });
 closeButton.addEventListener("click", () => {
   document.querySelector(".nav-bar").classList.add("close-nav");
+  document.querySelector(".shadow").classList.add("shadow-hide");
 });
 
 // up-down manipulation ( ^ )
@@ -44,4 +46,11 @@ company.addEventListener("focusout", () => {
   companyList.classList.add("absolute");
   up[1].classList.add("hide");
   down[1].classList.remove("hide");
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target === document.querySelector(".shadow")) {
+    document.querySelector(".nav-bar").classList.add("close-nav");
+    document.querySelector(".shadow").classList.add("shadow-hide");
+  }
 });

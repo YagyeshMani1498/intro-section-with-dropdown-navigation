@@ -97,6 +97,19 @@ body {
   min-width: 300px;
 }
 
+.shadow {
+  background-color: rgba(0, 0, 0, 0.527);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  transition: transform 0.3s ease-in;
+}
+.shadow-hide {
+  transform: translateX(-100%);
+}
+
 /***********************
 STYLING HEADER
 ***********************/
