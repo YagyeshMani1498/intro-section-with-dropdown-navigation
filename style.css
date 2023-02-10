@@ -136,9 +136,9 @@ STYLING HERO TEXT AND IMG
   justify-items: center;
 }
 
-.hero-img {
+/* .hero-img {
   max-width: 30.625rem;
-}
+} */
 
 .hero-text {
   padding: 0 1.5rem;
